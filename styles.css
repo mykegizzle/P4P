@@ -1,0 +1,154 @@
+html,
+body {
+  height: auto !important;
+  min-height: 100vh;
+}
+body {
+  background: lightgray;
+}
+.wrapper {
+  width: 1000px;
+  margin: 10% auto;
+  min-height: 100%;
+}
+.nav {
+  width: 100vw;
+  height: 250px;
+  background-color: lightgray;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.nav > .logo {
+  width: 450px;
+}
+
+.single-img {
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flex;
+  display: -o-flex;
+  display: flex;
+
+  justify-content: center;
+  width: 30%;
+  height: 400px;
+  align-items: center;
+  box-shadow: 0 0 0 150px inset, 0 0 5px black;
+  transition: box-shadow 0.5s;
+  float: left;
+  margin: 10px;
+}
+
+.single-img:after {
+  width: 80%;
+  height: 80%;
+  display: block;
+  white-space: pre;
+  font-size: 30px;
+  color: white;
+  text-align: center;
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flex;
+  display: -o-flex;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: opacity 0.5s 0.5;
+}
+
+.single-img:hover {
+  box-shadow: 0 0 0 5px inset, 0 0 5px black, 0 0 10px black inset;
+  transition: box-shadow 0.5s;
+}
+
+.single-img:hover:after {
+  opacity: 0;
+  transition: opacity 0.5s;
+}
+
+.img1 {
+  background-image: url("Bowe.jpg");
+  -webkit-background-size: cover;
+  background-position: center center;
+  color: rgba(0, 0, 0, 0.9);
+}
+.img1:after {
+  content: "Heavyweight";
+}
+.img2 {
+  background-image: url("dre.jpg");
+  -webkit-background-size: cover;
+  background-position: center center;
+  color: rgba(0, 0, 0, 0.9);
+}
+.img2:after {
+  content: "Light Heavyweight";
+}
+.img3 {
+  background-image: url("royjonesjr.jpg");
+  -webkit-background-size: cover;
+  background-position: center center;
+  color: rgba(0, 0, 0, 1.5);
+}
+.img3:after {
+  content: "Middleweight";
+}
+.img4 {
+  background-image: url("floyd.jpg");
+  -webkit-background-size: cover;
+  background-position: center center;
+  color: rgba(0, 0, 0, 1.5);
+}
+.img4:after {
+  content: "Welterweight";
+}
+.img5 {
+  background-image: url("tank.jpg");
+  -webkit-background-size: cover;
+  background-position: center center;
+  color: rgba(0, 0, 0, 0.9);
+}
+.img5:after {
+  content: "Lightweight";
+}
+.img6 {
+  background-image: url("SS.jpeg");
+  -webkit-background-size: cover;
+  background-position: center center;
+  color: rgba(0, 0, 0, 0.9);
+}
+.img6:after {
+  content: "Featherweight";
+}
+
+@media (max-width: 800px) {
+  .single-img {
+    display: flex;
+    justify-content: center;
+    width: 30%;
+    height: 400px;
+    align-items: center;
+    box-shadow: 0 0 0 150px inset, 0 0 5px black;
+    transition: box-shadow 0.5s;
+    float: left;
+    margin: 10px;
+  }
+}
+
+@media (max-width: 1200px) {
+  .single-img {
+    display: flex;
+    grid-template: 1fr;
+    justify-content: center;
+    width: 30%;
+    height: 400px;
+    align-items: center;
+    box-shadow: 0 0 0 150px inset, 0 0 5px black;
+    transition: box-shadow 0.5s;
+    float: left;
+    margin: 10px;
+  }
+}
